@@ -1,0 +1,186 @@
+/* The following line can be included in a src/App.scss */
+@import "bootstrap/scss/bootstrap";
+
+.hero {
+  background-image: url("/images/bg.jpg");
+  object-fit: fill;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 66px);
+  h1 {
+    font-size: 3.25em;
+    color: rgb(55, 55, 55);
+
+    &.primary {
+      color: #004373;
+      font-weight: 700;
+      font-size: 3.5em;
+    }
+  }
+
+  .hero-text {
+    width: 70%;
+    margin: 20px 0;
+    p {
+      font-size: 1.35em;
+      color: gray;
+    }
+  }
+
+  button {
+    height: 55px;
+    font-size: 1em;
+  }
+
+  .hero-image {
+    // height: 70%;
+    img {
+      object-fit: cover;
+      border: 1px solid #0061a7;
+      background-color: #ffffff;
+    }
+  }
+}
+
+.section3 {
+  background-color: rgb(250, 250, 250);
+  // height: 300px;
+  padding: 80px 0;
+
+  .object {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    border-radius: 100%;
+    background-color: rgba(96, 0, 96, 0.727);
+    border-color: rgb(96, 0, 96);
+    border-width: medium;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      opacity: 0.4;
+      border-radius: 100%;
+    }
+  }
+
+  .line {
+    position: absolute;
+    top: 70px;
+    z-index: 0;
+
+    .ant-divider {
+      border-width: medium;
+      border-color: rgb(96, 0, 96);
+    }
+  }
+  .card {
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 0;
+    box-shadow: 0 10px 15px 4px rgb(215, 215, 215);
+    &-body {
+      padding: 0;
+    }
+
+    .card-left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6em;
+      background-color: rgb(96, 0, 96);
+      color: rgba(255, 255, 255, 0.68);
+      font-weight: 600;
+    }
+
+    .card-right {
+      padding: 20px;
+      padding-right: 40px;
+      .card-title {
+        text-transform: uppercase;
+        font-size: 1.35em;
+        color: rgb(96, 0, 96);
+        letter-spacing: 1.5px;
+      }
+      .card-text {
+        font-size: 1.1em;
+        line-height: 1.15;
+        color: rgb(114, 114, 114);
+      }
+
+    }
+
+    
+  }
+  
+}
+
+.footer {
+  display: block;
+  height: 200px;
+  background: linear-gradient(90deg, #114576 35%, #0061a7 65%);
+  position: relative;
+
+  &-body {
+    position: relative;
+    top: 50px;
+    padding: 50px 90px;
+
+    .socials {
+      display: flex;
+      column-gap: 30px;
+      i {
+        background-color: #ffffff;
+        color: #8f8f8f;
+        font-size: 18px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        border-radius: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .copyright {
+      float: right;
+      color: #eaeaea;
+      letter-spacing: 1.15;
+      font-size: 1.2em;
+      padding-right: 30px;
+    }
+  }
+
+  .divider {
+    padding: 0 90px;
+    position: absolute;
+    width: 100%;
+    .ant-divider {
+      border-color: rgba(230, 230, 230, 0.621);
+    }
+  }
+  
+}
+.navbar-nav {
+  .nav-link {
+    margin-right: 1.2em;
+    font-weight: 500;
+    font-size: 1em;
+    // color: black;
+  }
+
+  button {
+    height: 40px;
+  }
+}
